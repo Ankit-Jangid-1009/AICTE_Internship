@@ -1,0 +1,6 @@
+streamlit
+transformers==4.33.3
+tensorflow
+# nltk
+tf-keras
+torch>=1.13.0
