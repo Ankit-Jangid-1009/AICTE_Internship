@@ -21,7 +21,7 @@ def healthcare_chatbot(user_input):
         inputs = tokenizer(user_input, return_tensors="pt")
         output = model.generate(**input, max_length = 500, num_return_sequences=1)
         response = tokenizer.decode(output[0], skip_special_tokens=True)
-        return response[0]['generated_text']
+        return response
 
 def main():
     st.title("Healthcare Assistant Chatbot")
